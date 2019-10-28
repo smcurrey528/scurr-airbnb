@@ -1,0 +1,708 @@
+@font-face {
+  font-family: FireBnb;
+  src: url(./Font_Cereal/AirbnbCereal-Medium.ttf);
+}
+
+.second{
+  height:100vh;
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+  max-width: 1080px !important;
+}
+.one{
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.two{
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
+
+.four {
+  margin-bottom: 60px;
+}
+.explore{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-left: -28px;
+  overflow-x: scroll;
+}
+p{
+  opacity: .8;
+}
+.explore img{
+  /* max-height: 100%;
+  max-width: 100%; */
+}
+img{
+  border-radius: 5px;
+}
+
+.thingstodo{
+  cursor: pointer;
+  /*margin-left: 20px;*/
+  margin-top: 5px;
+  margin-right: 5px;
+}
+.explore a:hover{
+  border-bottom: 0px !important;
+}
+
+.any-kind{
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.info{
+  margin-top: 10px;
+}
+
+#root {
+  font-family: FireBnb, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.43;
+}
+.home{
+   background: url("https://images.unsplash.com/photo-1505410272170-ccbb6934c5c3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3c9e268cb2f3793206d7f875b431fb4e&auto=format&fit=crop&w=1050&q=80") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  position: relative !important;
+  width: 100% !important;
+}
+
+a {
+  text-decoration: none !important;
+  color: black !important;
+  font-size: 15px;
+  padding-bottom: 10px;
+  margin-left: 30px;
+}
+
+a:hover {
+  border-bottom: 3px solid black !important;
+}
+
+.logo {
+  cursor: pointer;
+  width: 25%;
+  height: 25%;
+  padding-left: 15px;
+  padding-right: 90px;
+}
+
+nav {
+  display: flex !important;
+  justify-content: space-between;
+  padding: 20px;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0 !important;
+  display: flex;
+  text-decoration: none;
+}
+
+.Hlinks {
+  list-style-type: none;
+  text-decoration: none;
+  padding-left: 10px;
+}
+
+.full-form {
+  background-color: white;
+  margin: 2% 50% 5% 5%;
+  border-radius: 5px;
+  width: 40%;
+}
+
+.book {
+  padding: 5% 8% 0 5%;
+}
+
+.full-form > form {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 1fr 1fr;
+}
+
+.where {
+  padding: 5% 5%;
+  grid-column: span 2;
+}
+
+.check-in {
+  align-self: center;
+  padding: 0 2% 0 10%;
+  grid-column: span 1;
+}
+
+.check-out {
+  align-self: center;
+  padding: 0 10% 0 2%;
+  grid-column: span 1;
+}
+
+.guests {
+  padding: 5% 5%;
+  width: 100%;
+  height: 75%;
+  grid-column: span 2;
+}
+
+.search {
+  text-align: center;
+  padding: 5% 5%;
+  grid-column: span 2;
+}
+
+input {
+  line-height: 24px;
+  width: 100%;
+}
+
+.search-button {
+  cursor: pointer;
+  background-color: #ff2f52;
+  width: 30%;
+  color: white;
+  font-size: 17px;
+  border-radius: 5px;
+  padding: 3%;
+}
+
+.listings {
+  padding: 10px;
+  background: white !important;
+  border: 1px solid rgb(235, 235, 235);
+}
+
+.search-picture {
+  height: 18px;
+  width: 18px;
+  display: block;
+  fill: currentcolor;
+}
+
+.search-icon {
+ display: flex;
+ border: solid 1px gray;
+ padding: 10px;
+}
+
+label {
+  line-height: normal;
+  box-sizing: border-box;
+}
+
+.filter-buttons {
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
+  margin: 1% 1%;
+  width:  10%;
+  height: 100%;
+  border: 1px solid rgb(235, 235, 235);
+  border-radius: 5px;
+  padding: 5px;
+  list-style-type: none;
+}
+
+.filter-buttons:hover {
+  background-color: darkcyan !important;
+  color: white;
+}
+
+.single-listing {
+   background: white !important;
+   padding: 20px;
+}
+
+.listings-list {
+  background: white !important;
+   padding: 20px;
+}
+
+.navheader {
+ display: flex;
+align-content: center;
+  flex-direction: row;
+}
+
+.search-icon {
+  transition: box-shadow 200ms ease-in !important;
+    transition-property: box-shadow !important;
+    transition-duration: 200ms !important;
+    transition-timing-function: ease-in !important;
+    transition-delay: 0s !important;
+    border: 1px solid #EBEBEB !important;
+    border-radius: 4px !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+    height: 48px !important;
+}
+
+.head-logo {
+  display: flex;
+  align-content: center;
+  width: 60px;
+  height: 60px;
+}
+
+.dropdown{
+  display: flex;
+  align-content: center;
+  padding-right: 30px;
+  padding-top: 5px;
+}
+
+.search-picture {
+  display: flex;
+  align-content: center;
+}
+.search-input {
+  display: flex;
+  align-content: center;
+  border: none;
+  padding-left: 10px;
+  width: 400px;
+  outline: none;
+}
+
+.list-img {
+  margin: 3% 0 0 0;
+  position: absolute;
+  left: 0;
+  height: 60%;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  grid-column: span 4;
+  grid-row: span 1;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.bigImage {
+  outline: 1px solid black;
+  order: 1;
+  width: 50%;
+  height: 100%;
+  flex: 0 0 100%;
+  filter: brightness(75%);
+  transition: all .2s ease-in-out;
+}
+
+.bigImage:hover {
+  filter: brightness(100%);
+  transform: scale(1.1);
+}
+
+.topSmallImage{
+  outline: 1px solid black;
+  order: 2;
+  height: 50%;
+  width: 50%;
+  flex: 0 0 50%;
+  filter: brightness(75%);
+  transition: all .2s ease-in-out;
+}
+
+.topSmallImage:hover {
+  filter: brightness(100%);
+  transform: scale(1.1);
+}
+
+.bottomSmallImage {
+  outline: 1px solid black;
+  order: 3;
+  height: 50%;
+  width: 50%;
+  flex: 0 0 50%;
+  filter: brightness(75%);
+  transition: all .2s ease-in-out;
+}
+
+.bottomSmallImage:hover {
+  filter: brightness(100%);
+  transform: scale(1.1);
+}
+
+.room-specifics{
+  display: inline-flex;
+}
+
+.guestImg {
+  width: 30px;
+  height: 30px;
+}
+
+.specifics {
+  color: darkslategray;
+  font-weight: 800;
+}
+
+.listing-title {
+  color: darkslategray;
+}
+
+.superhost {
+  padding-bottom: 20px;
+  border-bottom: 1px solid gray;
+}
+
+.contactHost {
+  color: darkcyan;
+  font-weight: 800;
+}
+
+.sleeping {
+  border: solid 1px lightgray;
+  width: 200px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.endDate {
+  margin-bottom: 50px;
+}
+
+.reviews {
+  margin-bottom: 10px;
+}
+
+.review {
+  margin-bottom: 20px;
+}
+
+.contactHosts {
+  background-color: white;
+  color: darkcyan;
+  border: 2px solid darkcyan !important;
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 3px;
+
+}
+
+.contactHosts:hover {
+  color: white;
+  background-color: darkcyan;
+  border: 2px solid white !important;
+}
+
+.always {
+  margin-top: 10px;
+}
+
+.report {
+  color: darkcyan;
+}
+
+.listing-info {
+  margin-top: 540px;
+}
+
+.stickyForm {
+  border: 1px solid rgb(235, 235, 235);
+  width: 370px;
+  text-align: left;
+  padding: 15px;
+  background-color: white;
+
+
+}
+
+.form-center {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.formbooking {
+  color: white;
+  background-color: crimson;
+  padding: 10px;
+  width: 300px;
+  height: 50px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.report-form {
+  color: darkcyan;
+  text-align: center;
+  position: fixed;
+  right: 17%;
+  padding-top: 10px;
+
+}
+
+.single-right-side {
+  position: fixed;
+  top: 15%;
+  right: 25%;
+  width: 150px;
+  height: 400px;
+  transition: top 0.3s;
+  bottom: 50%;
+  max-height: 500px;
+  min-height: 700px;
+
+
+}
+
+.single-left-side {
+  position: absolute;
+  left: 10%;
+  width: 50%;
+}
+
+.stickyNav {
+  border-top: 1px solid rgb(235, 235, 235);
+  border-bottom: 1px solid rgb(235, 235, 235);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: white;
+  color: darkcyan;
+  font-size: 15px;
+  padding-top: 10px;
+ max-height: 500px;
+
+}
+
+.rightStickyNav {
+  display: inline-flex;
+  margin-left: 50%;
+  color: darkslategray;
+}
+
+.downloadIcon {
+  padding-top: 2px;
+  width: 20px;
+  height: 20px;
+}
+
+.stickynav1 {
+  background-color: white;
+}
+
+.getFullDetails {
+  color: darkcyan;
+
+}
+
+.login, .signup {
+  cursor: pointer;
+   color: black;
+   font-size: 15px;
+   margin-left: 30px;
+}
+
+.login:hover {
+  border-bottom: 3px solid black !important;
+  padding-bottom: 8px;
+}
+
+.signup:hover {
+  border-bottom: 3px solid black !important;
+  padding-bottom: 8px;
+}
+
+.moreHomeCards, .moreThings{
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+}
+
+.otherHomes, .otherThings {
+  display: inline-flex;
+}
+
+
+.manyHomes, .manyThings {
+  border-top: 1px solid rgb(235, 235, 235);
+  padding: 30px;
+
+}
+
+.englishButton {
+  position: relative;
+  bottom: 0;
+  right: 50;
+}
+
+.footer {
+  border-top: 1px solid rgb(235, 235, 235);
+  padding-top: 10px;
+  display: inline-flex;
+}
+
+.airbnbFooter, .discoverFooter, .hostingFooter {
+  padding-right: 60px;
+}
+
+td {
+  padding: 5px;
+  border: 30px;
+}
+
+table {
+  margin-bottom: 20px;
+}
+
+.dates {
+  display: inline-flex;
+}
+
+.Availability, .Accessibility, .Sleeping, .Amenities, .host-info, .policies, .reviewHeader{
+  border-top: 1px solid rgb(235, 235, 235);
+  padding-top: 20px;
+}
+
+.star-svg{
+  background-color:darkcyan;
+}
+.star-svg path{
+  fill: white;
+
+
+}
+
+.reviewHeader {
+  display: inline-flex;
+  border-bottom: 1px solid rgb(235, 235, 235);
+  padding-bottom: 20px;
+}
+
+.fourreviews{
+  padding-right: 10px;
+  font-size: 25px;
+}
+
+.searchreviews{
+  margin-left: 170px;
+  width: 180px;
+  padding: 5px;
+}
+
+.footerbuttons {
+  margin: 5px;
+}
+.clickNav {
+  list-style-type: none;
+  text-decoration: none;
+}
+.clickNav:hover {
+  color: black;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.listingNav {
+  /* position: absolute; */
+  width: 50%;
+  height: 50%;
+  padding: 0;
+  align-self: center;
+  justify-content: flex-end;
+}
+@media only screen and (min-width: 1128px){
+  .home {
+    height: 100vh !important;
+    min-height: 680px !important;
+}
+.home {
+    position: relative !important;
+    width: 100% !important;
+}
+}
+
+@media only screen and (min-width: 1128px){
+.second {
+    margin: 0 auto !important;
+    position: relative !important;
+}
+
+}
+
+
+.modal {
+  font-size: 12px;
+  width: 100%;
+  height: 400px;
+}
+.modal > .header {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+}
+.modal > .content {
+  width: 100%;
+  padding: 10px 5px;
+}
+.modal > .actions {
+  width: 100%;
+  padding: 10px 5px;
+  margin: auto;
+  text-align: center;
+}
+.modal > .close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -10px;
+  font-size: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #cfcece;
+}
+
+.done {
+  color: white !important;
+}
+
+@media only screen and (max-width: 750px){
+  .full-form {
+  margin: 2% 0% 5% 0%;
+  width: 100%;
+}
+.three{
+  display: none;
+}
+.explore{
+  /* flex-wrap: wrap; */
+}
+
+}
+
+.add {
+  width: 500px;
+  height: 1000px;
+}
+
+
+.becomeHost {
+  background-color: white;
+  border: 1px solid black;
+  text-align: center;
+  width: 70%;
+  margin-left: 60%;
+  padding: 40px;
+}
+
+.hostSubmit {
+  background-color: crimson;
+  color: white;
+}
